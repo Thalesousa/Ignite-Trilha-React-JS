@@ -1,4 +1,4 @@
-import { SimpleGrid, Box, Text, theme, DarkMode } from "@chakra-ui/react";
+import { SimpleGrid, Box, Text, theme } from "@chakra-ui/react";
 import dynamic from 'next/dynamic';
 import { Flex } from "@chakra-ui/react";
 import { Header } from "../components/Header";
