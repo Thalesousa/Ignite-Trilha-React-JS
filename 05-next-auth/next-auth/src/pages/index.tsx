@@ -1,5 +1,6 @@
 import { FormEvent, useContext, useState } from "react"
 import { AuthContext } from "../contexts/AuthContext";
+import style from '../styles/global.module.css';
 
 export default function Home(){
   const [email, setEmail] = useState('');
@@ -18,9 +19,9 @@ export default function Home(){
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
-      <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
+    <form onSubmit={handleSubmit} className={style.form}>
+      <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email"/>
+      <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Senha" />
       <button type="submit">Entrar</button>
     </form>
   )
