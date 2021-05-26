@@ -16,7 +16,7 @@ export function SearchResults({ results }: SearchResultsProps) {
     return results.reduce((total, product) => {
       return total + product.price;
     }, 0)
-  }, [])
+  }, [results])
   return(
     <div>
       <h2>{totalPrice}</h2>
